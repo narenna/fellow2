@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>案例1.1水平导航菜单</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;/*去掉a的下划线*/
+        }
+        #menu{
+            overflow: hidden;
+        }
+        #menu li{
+            float: left;
+            width: 120px;
+            height: 30px;
+            margin-right: 5px;
+        }
+        #menu li a{
+            float: left;/*左浮动*/
+            width: 100%;
+            height: 100%;
+            background: #cccccc;
+            line-height: 30px;
+            text-align: center;/*文本居中*/
+        }
+    </style>
+</head>
+<body>
+<ul id="menu">
+    <li><a href="#">link 1</a></li>
+    <li><a href="#">link 2</a></li>
+    <li><a href="#">link 3</a></li>
+</ul>
+
+</body>
+</html>
+<!--
+css选择器
+1.标签/元素选择器 h1 div
+2.ID选择器 #id 不可重复
+3.class选择器 .class 可以重复
+4.后代选择器 #menu a
+5.子代选择器 >ie6不支持
+6.多位选择器
+7.伪类选择器
+
+权重值：id选择器100 class选择器10 标签tag选择器1 权重值可叠加 最大显示谁
+标准盒模型宽度和高度加在内容中
+父子关系时设置子的外边距改变 父亲的也会跟着改变所以给父设置一个溢出overflow
+兄弟关系设置外边距时 取其中最大的值设置距离
+
+行级元素 inline 和名在一行 不能设置宽和高 由内容撑起来大小
+块级元素 block 可以设置宽和高
+
+clear 可以清除浮动 both
+-->
